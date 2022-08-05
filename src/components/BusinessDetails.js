@@ -6,6 +6,7 @@ const BusinessDetails = ({ formData, setFormData }) => {
             <input
                 className='px-3 py-2 border block border-gray-400 w-full focus:outline-none focus: outline-teal-700 rounded '
                 type="text"
+                required
                 name="businessName"
                 placeholder='Business Name'
                 id="businessName"
@@ -15,6 +16,7 @@ const BusinessDetails = ({ formData, setFormData }) => {
             <input
                 className='px-3 py-2 border block border-gray-400 w-full focus:outline-none focus: outline-teal-700 rounded '
                 type="number"
+                required
                 name="gstNo"
                 placeholder='GST NO...'
                 id="gstNo"
@@ -25,6 +27,7 @@ const BusinessDetails = ({ formData, setFormData }) => {
                 className='px-3 py-2 border border-gray-400 w-full focus:outline-none focus: outline-teal-700 rounded ' type="text"
                 name="address"
                 placeholder='Address...'
+                required
                 id="address"
                 value={formData.address}
                 onChange={(e) => setFormData({ ...formData, address: e.target.value })}

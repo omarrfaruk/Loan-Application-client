@@ -4,7 +4,9 @@ const PersonalDetails = ({ formData, setFormData }) => {
     return (
         <div className='space-y-4'>
             <input
-                className='px-3 py-2 border border-gray-400 w-1/2 focus:outline-none focus: outline-teal-700 rounded ' type="text"
+                className='px-3 py-2 border border-gray-400 w-1/2 focus:outline-none focus: outline-teal-700 rounded '
+                type="text"
+                required
                 name="firstName"
                 placeholder='First Name'
                 id="firstName"
@@ -15,6 +17,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
             <input
                 className='px-3 py-2 border border-gray-400 w-1/2 focus:outline-none focus: outline-teal-700 rounded '
                 type="text"
+                required
                 name="lastName"
                 placeholder='Last Name...'
                 id="lastName"
@@ -23,7 +26,8 @@ const PersonalDetails = ({ formData, setFormData }) => {
             />
 
             <input
-                className='px-3 py-2 border border-gray-400 block w-full focus:outline-none focus: outline-teal-700 rounded '
+                className='px-3 py-2 border border-gray-400 block w-full focus:outline-none focus: outline-teal-700 rounded'
+                required
                 type="email"
                 name="email"
                 placeholder='Email...'
@@ -34,6 +38,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
                 className='px-3 py-2 border border-gray-400 block w-full focus:outline-none focus: outline-teal-700 rounded '
                 type="number"
                 name="age"
+                required
                 placeholder='Age'
                 id="age"
                 value={formData.age}
@@ -43,6 +48,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
                 className='px-3 py-2 border border-gray-400 block w-full focus:outline-none focus: outline-teal-700 rounded '
                 type="tel"
                 name="mobileNumber"
+                required
                 placeholder='Mobile Number'
                 id="mobileNumber"
                 value={formData.mobileNumber}
